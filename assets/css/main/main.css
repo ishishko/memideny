@@ -1,0 +1,5 @@
+.main--container {
+  height: calc(100vh - 11rem);
+  background-color: lightcoral;
+  justify-content: space-between;
+}

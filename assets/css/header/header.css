@@ -1,0 +1,29 @@
+.header--container {
+  height: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: antiquewhite;
+}
+
+.header--container--div {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  border-radius: 0.85rem;
+}
+.header--logo {
+  width: 30%;
+  height: 100%;
+  background-image: url("../../img/logo.jpg");
+  background-size: cover;
+}
+.header--marca {
+  width: 30%;
+  height: 70%;
+  background-image: url("../../img/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header--login {
+  width: 15%;
+}
