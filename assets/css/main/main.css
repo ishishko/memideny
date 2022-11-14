@@ -1,5 +1,6 @@
 .main--container {
-  height: calc(100vh - 11rem);
-  background-color: lightcoral;
+  height: calc(100vh - 18rem);
   justify-content: space-between;
+  flex-direction: column;
+  /* border-radius: 1rem; */
 }

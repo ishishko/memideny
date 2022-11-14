@@ -1,8 +1,8 @@
 .header--container {
-  height: 5rem;
+  height: 12rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: antiquewhite;
+  background-color: #ffffff;
 }
 
 .header--container--div {
@@ -12,18 +12,41 @@
   border-radius: 0.85rem;
 }
 .header--logo {
-  width: 30%;
-  height: 100%;
-  background-image: url("../../img/logo.jpg");
+  flex-direction: column;
+}
+.header--logo--1 {
+  width: 7rem;
+  height: 3rem;
+  background-image: url("../../img/logo\ 1.jpg");
   background-size: cover;
 }
-.header--marca {
-  width: 30%;
-  height: 70%;
-  background-image: url("../../img/logo.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.header--logo--2 {
+  width: 17rem;
+  height: 4rem;
+  background-image: url("../../img/memydeni.jpg");
+  background-size: cover;
 }
-.header--login {
-  width: 15%;
+.header--banner {
+  /* background-color: lightgoldenrodyellow; */
+  width: 70%;
+  height: 100%;
+}
+
+.header--novedades {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+}
+.novedades--img {
+  height: 120%;
+}
+.header--destacados {
+  width: 60%;
+  height: 100%;
+  border: 2px solid lightcoral;
+  border-radius: 1rem;
+}
+
+.btn--login {
+  padding: 1rem 2rem;
 }
