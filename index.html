@@ -9,24 +9,42 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/header/header.css" />
-    <link rel="stylesheet" href="./assets/css/main/main.css" />
-    <link rel="stylesheet" href="./assets/css/main/menu.css" />
-    <link rel="stylesheet" href="./assets/css/main/productos.css" />
+    <link rel="stylesheet" href="./assets/css/header/nav.css" />
+    <link rel="stylesheet" href="./assets/css/main/slider.css" />
 
     <link rel="stylesheet" href="./assets/css/footer/footer.css" />
   </head>
   <body>
-    <header class="header--container container flex">
+    <header class="header--container flex">
       <div class="header--container--div flex">
         <div class="header--logo flex">
-          <div class="header--logo--1"></div>
-          <div class="header--logo--2"></div>
+          <div class="header--logo1"></div>
         </div>
-        <div class="header--banner flex">
-          <div class="header--novedades flex">
-            <img class="novedades--img" src="./assets/img/manualidades.gif" alt="" />
-          </div>
-          <div class="header--destacados flex">Destacados o Novedades</div>
+        <div class="header--buscador flex">
+          <input class="input--buscador" type="text" placeholder="Buscar" />
+        </div>
+        <div class="header--container--nav">
+          <nav class="header--nav flex">
+            <ul class="header--ul flex">
+              <li class="header--li header--li__1 flex"><a href="">INICIO</a></li>
+              <li class="header--li header--li__2 flex">
+                <div class="li--secundario__div"></div>
+                <a href="">PRODUCTOS</a>
+                <ul class="ul--secundario">
+                  <li class="li--secuntadio"><a href="#">LETRAS 3D</a></li>
+                  <li class="li--secuntadio"><a href="#">PAPERCRAFT</a></li>
+                  <li class="li--secuntadio"><a href="#">BOX Clasico</a></li>
+                  <li class="li--secuntadio"><a href="#">BOX Acetato</a></li>
+                  <li class="li--secuntadio"><a href="#">BOX Interactivo</a></li>
+                  <li class="li--secuntadio"><a href="#">BOX Tematico</a></li>
+                  <li class="li--secuntadio"><a href="#">DECORACIONES</a></li>
+                </ul>
+              </li>
+              <li class="header--li header--li__3 flex"><a href="">QUIENES SOMOS</a></li>
+              <li class="header--li header--li__4 flex"><a href="">CONTACTO</a></li>
+              <li class="header--li header--li__5 flex"><a href="">INFO</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="header--login flex">
           <button class="btn--login">Login</button>
@@ -34,122 +52,14 @@
       </div>
     </header>
     <main>
-      <section class="main--container container flex">
-        <div class="menu--container">
-          <ul class="menu--ul flex">
-            <li class="menu--li menu--li__buscar"><input class="menu--buscar" type="text" placeholder="Buscar" /></li>
-            <li class="menu--li li__selecionado">TODO</li>
-            <li class="menu--li">LETRAS 3D</li>
-            <li class="menu--li">PAPERCRAFT</li>
-            <li class="menu--li">BOX CLASICO</li>
-            <li class="menu--li">BOX ACETATO</li>
-            <li class="menu--li">BOX INTERACTIVO</li>
-            <li class="menu--li">BOX TEMATICO</li>
-            <li class="menu--li">BOX CANDY</li>
-          </ul>
-        </div>
-        <div class="productos--container">
-          <div class="productos--card--container">
-            <div class="card--container--todos card--container">
-              <!-- <p class="card--container--titulo">TODO</p> -->
-              <div class="card--container--interno flex">
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-                <div class="card--producto">
-                  <div class="card--img"></div>
-                  <p class="card--titulo"></p>
-                  <p class="card--categoria"></p>
-                  <p class="card--precio"></p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section class="slider--container flex">
+        <div class="slider--container--div">
+          <div class="slider--div--img"></div>
+          <img src="" alt="" />
         </div>
       </section>
     </main>
-    <footer class="footer--container container flex">
+    <footer class="footer--container flex">
       <div class="footer--container--div">
         <div class="footer--instagram">
           <a href="#"><img src="" alt="" /></a>

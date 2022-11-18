@@ -1,52 +1,52 @@
 .header--container {
-  height: 12rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 8rem);
+  height: 5rem;
+  padding: 0rem 4rem;
+  padding-top: 1rem;
   background-color: #ffffff;
+  box-shadow: 0 20px 10px lightpink inset;
 }
 
 .header--container--div {
   width: 100%;
   height: 100%;
-  justify-content: space-between;
-  border-radius: 0.85rem;
 }
+
+/*-------------LOGO------------*/
 .header--logo {
-  flex-direction: column;
+  width: 20%;
+  height: 85%;
+  justify-content: start;
 }
-.header--logo--1 {
-  width: 7rem;
-  height: 3rem;
-  background-image: url("../../img/logo\ 1.jpg");
+.header--logo1 {
+  background-image: url(../../img/memydeni.jpg);
   background-size: cover;
-}
-.header--logo--2 {
-  width: 17rem;
-  height: 4rem;
-  background-image: url("../../img/memydeni.jpg");
-  background-size: cover;
-}
-.header--banner {
-  /* background-color: lightgoldenrodyellow; */
-  width: 70%;
-  height: 100%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 70%;
 }
 
-.header--novedades {
-  width: 35%;
-  height: 100%;
-  overflow: hidden;
+/*-----------------Buscador-------------*/
+.header--buscador {
+  width: 20%;
+  height: calc(100% - 1rem);
+  padding-top: 1rem;
 }
-.novedades--img {
-  height: 120%;
-}
-.header--destacados {
-  width: 60%;
-  height: 100%;
-  border: 2px solid lightcoral;
+.input--buscador {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 2rem;
+  padding: 0 1rem;
   border-radius: 1rem;
+  box-shadow: 0 0 10px lightpink;
 }
 
-.btn--login {
-  padding: 1rem 2rem;
+.header--login {
+  width: 10%;
+  height: calc(100% - 1rem);
+  padding-top: 1rem;
 }
