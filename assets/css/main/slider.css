@@ -1,4 +1,5 @@
 .slider--container {
+  display: none;
   width: calc(100% - 8rem);
   height: calc(100vh - 6rem);
   padding: 0rem 4rem;
@@ -16,7 +17,9 @@
 .slider--ul {
   width: 300%;
   height: 100%;
-  animation: slider 20s infinite both alternate linear;
+}
+.slider--ul__animacion {
+  animation: slider 10s infinite both alternate linear;
 }
 .slider--li {
   width: 100%;
@@ -32,7 +35,7 @@
   background-image: url(../../img/slider1.jpg);
 }
 .slider__li3 {
-  background-image: url(../../img/slider2.jpg);
+  background-image: url(../../img/slider2.jpeg);
 }
 
 .slider--selector {
@@ -45,9 +48,9 @@
 }
 .slider--a {
   border-radius: 1.25rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: rgb(117, 204, 206, 0.5);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(117, 204, 206, 0.8);
 }
 
 @keyframes slider {

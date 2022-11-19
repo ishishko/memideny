@@ -1,0 +1,75 @@
+.productos--container {
+  width: calc(100% - 8rem);
+  height: calc(100vh - 6rem);
+  padding: 0rem 4rem;
+}
+.productos--container--div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.productos--selector {
+  height: 100%;
+  width: 13%;
+  flex-direction: column;
+}
+.productos--top {
+  width: 100%;
+  height: 3rem;
+}
+.productos--p1 {
+  color: rgb(139, 37, 112);
+}
+
+.productos--ul {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: calc(100% - 3rem);
+  margin-bottom: 3rem;
+}
+
+.productos--lista {
+  width: 87%;
+  height: 100%;
+}
+
+.productos--li {
+  color: rgb(red, green, blue);
+  width: 100%;
+  max-width: 90%;
+  height: 4rem;
+  max-height: 3rem;
+  background-color: bisque;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.productos--li:hover {
+  transition: all 0.25s;
+  max-width: 100%;
+  max-height: 3.5rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+.producto__li1 {
+  background-color: rgb(219, 168, 205);
+}
+.producto__li2 {
+  background-color: rgb(234, 95, 60);
+}
+.producto__li3 {
+  background-color: rgb(208, 234, 221);
+}
+.producto__li4 {
+  background-color: rgb(117, 204, 206);
+}
+.producto__li5 {
+  background-color: rgb(249, 194, 210);
+}
+.producto__li6 {
+  background-color: rgb(248, 209, 50);
+}
+.producto__li7 {
+  background-color: rgb(219, 168, 205);
+}

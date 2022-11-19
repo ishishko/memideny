@@ -7,10 +7,17 @@
     <title>Memy Deny</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/header/header.css" />
     <link rel="stylesheet" href="./assets/css/header/nav.css" />
     <link rel="stylesheet" href="./assets/css/main/slider.css" />
+    <link rel="stylesheet" href="./assets/css/main/productos.css" />
+    <link rel="stylesheet" href="./assets/css/main/productos-selector.css" />
+    <link rel="stylesheet" href="./assets/css/main/productos-lista.css" />
 
     <link rel="stylesheet" href="./assets/css/footer/footer.css" />
   </head>
@@ -21,28 +28,27 @@
           <div class="header--logo1"></div>
         </div>
         <div class="header--buscador flex">
-          <input class="input--buscador" type="text" placeholder="Buscar" />
+          <input class="input--buscador p2" type="text" placeholder="Buscar" />
         </div>
         <div class="header--container--nav">
           <nav class="header--nav flex">
             <ul class="header--ul flex">
-              <li class="header--li header--li__1 flex"><a href="">INICIO</a></li>
+              <li class="header--li header--li__1 flex"><a class="p1" href="">INICIO</a></li>
               <li class="header--li header--li__2 flex">
-                <div class="li--secundario__div"></div>
-                <a href="">PRODUCTOS</a>
+                <a class="p1" href="">PRODUCTOS</a>
                 <ul class="ul--secundario">
-                  <li class="li--secuntadio"><a href="#">LETRAS 3D</a></li>
-                  <li class="li--secuntadio"><a href="#">PAPERCRAFT</a></li>
-                  <li class="li--secuntadio"><a href="#">BOX Clasico</a></li>
-                  <li class="li--secuntadio"><a href="#">BOX Acetato</a></li>
-                  <li class="li--secuntadio"><a href="#">BOX Interactivo</a></li>
-                  <li class="li--secuntadio"><a href="#">BOX Tematico</a></li>
-                  <li class="li--secuntadio"><a href="#">DECORACIONES</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">LETRAS 3D</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">PAPERCRAFT</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">BOX Clasico</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">BOX Acetato</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">BOX Interactivo</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">BOX Tematico</a></li>
+                  <li class="li--secuntadio"><a class="p2" href="#">DECORACIONES</a></li>
                 </ul>
               </li>
-              <li class="header--li header--li__3 flex"><a href="">QUIENES SOMOS</a></li>
-              <li class="header--li header--li__4 flex"><a href="">CONTACTO</a></li>
-              <li class="header--li header--li__5 flex"><a href="">INFO</a></li>
+              <li class="header--li header--li__3 flex"><a class="p1" href="">QUIENES SOMOS</a></li>
+              <li class="header--li header--li__4 flex"><a class="p1" href="">CONTACTO</a></li>
+              <li class="header--li header--li__5 flex"><a class="p1" href="">INFO</a></li>
             </ul>
           </nav>
         </div>
@@ -54,16 +60,35 @@
     <main>
       <section class="slider--container flex">
         <div class="slider--container--div">
-          <ul class="slider--ul flex">
+          <ul class="slider--ul slider--ul__animacion flex">
             <li class="slider--li slider__li1" id="slider1"></li>
             <li class="slider--li slider__li2" id="slider2"></li>
             <li class="slider--li slider__li3" id="slider3"></li>
           </ul>
         </div>
         <div class="slider--selector flex">
-          <a class="slider--a flex" href="#slider1">1</a>
-          <a class="slider--a flex" href="#slider2">2</a>
-          <a class="slider--a flex" href="#slider3">3</a>
+          <a class="slider--a flex" href="#slider1"></a>
+          <a class="slider--a flex" href="#slider2"></a>
+          <a class="slider--a flex" href="#slider3"></a>
+        </div>
+      </section>
+      <section class="productos--container">
+        <div class="productos--container--div flex">
+          <div class="productos--selector flex">
+            <div class="productos--top flex">
+              <p class="productos--p1 p1">PRODUCTOS</p>
+            </div>
+            <ul class="productos--ul flex">
+              <li class="productos--li producto__li1 p3 flex">LETRAS 3D</li>
+              <li class="productos--li producto__li2 p3 flex">PAPACRAFT</li>
+              <li class="productos--li producto__li3 p3 flex">BOX Clasico</li>
+              <li class="productos--li producto__li4 p3 flex">BOX Acetato</li>
+              <li class="productos--li producto__li5 p3 flex">BOX Interactivo</li>
+              <li class="productos--li producto__li6 p3 flex">BOX Tematico</li>
+              <li class="productos--li producto__li7 p3 flex">DECORACIONES</li>
+            </ul>
+          </div>
+          <div class="productos--lista"></div>
         </div>
       </section>
     </main>
