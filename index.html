@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memy Deny</title>
+    <title>Memi Deny</title>
+    <link rel="icon" href="./assets/img/ico.png" type="image/png" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link
@@ -52,7 +53,7 @@
               </li>
               <li class="header--li header--li__3 flex"><a class="p1 nav__somos" href="#">QUIENES SOMOS</a></li>
               <li class="header--li header--li__4 flex"><a class="p1 nav__contacto" href="#">CONTACTO</a></li>
-              <li class="header--li header--li__5 flex"><a class="p1 nav__info" href="#">INFO</a></li>
+              <!-- <li class="header--li header--li__5 flex"><a class="p1 nav__info" href="#">INFO</a></li> -->
             </ul>
           </nav>
         </div>
@@ -171,66 +172,78 @@
       </section>
     </main>
     <footer class="footer--container flex">
-      <p class="contacto--footer p5">¿Queres Contactarme?</p>
-      <div class="contacto--izq flex">
-        <div class="contacto--pedidos flex p4">
-          <p>
-            Los presupuestos tienen una validez de 15 días corridos, siendo confirmados con una seña del 50% del total,
-            el saldo deberá ser abonado contra entrega. Se hacen envíos a todo el país.
-          </p>
-          <p>
-            Los diseños serán enviados dos semanas antes de la entrega pactada para su aprobación, una vez dado el ok no
-            se admitirán modificaciones. Los agregados y adicionales en cantidad al pedido inicial serán presupuestados
-            al momento de la solicitud.
-          </p>
+      <p class="contacto--footer flex p5">¿Queres Contactarme?</p>
+      <div class="contacto--container--div flex">
+        <div class="contacto--izq flex">
+          <div class="contacto--pedidos flex p4">
+            <p>
+              Los presupuestos tienen una validez de 15 días corridos, siendo confirmados con una seña del 50% del
+              total, el saldo deberá ser abonado contra entrega. Se hacen envíos a todo el país.
+            </p>
+            <p>
+              Los diseños serán enviados dos semanas antes de la entrega pactada para su aprobación, una vez dado el ok
+              no se admitirán modificaciones. Los agregados y adicionales en cantidad al pedido inicial serán
+              presupuestados al momento de la solicitud.
+            </p>
+          </div>
+          <div class="contactos--google">
+            <iframe
+              class="contactos--iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.7130928464297!2d-58.53459527076385!3d-34.73411539665004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf73061492ad%3A0x597d2e0985b803e!2sEl%20Tabaquillo%2045%2C%20Cdad.%20Evita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669085829043!5m2!1ses!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div class="contactos--google">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.7130928464297!2d-58.53459527076385!3d-34.73411539665004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf73061492ad%3A0x597d2e0985b803e!2sEl%20Tabaquillo%2045%2C%20Cdad.%20Evita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669085829043!5m2!1ses!2sar"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="contacto--der flex">
-        <div class="contacto--redes"></div>
-        <div class="contacto--datos">
-          <div class="contacto--div--formulario">
-            <p class="p4">Completa el formulario para enviarme un mensaje.</p>
-            <form class="contacto--formulario" id="form" action="https://formspree.io/f/maykagoz" method="POST">
-              <div class="contacto--div--input">
-                <input class="input--nombre" type="text" name="nombre" required />
-                <label class="lbl--nombre">
-                  <span class="text--nombre p4">Nombre</span>
-                </label>
-              </div>
-              <div class="contacto--div--input">
-                <input class="input--email" type="email" name="email" required />
-                <label class="lbl--email">
-                  <span class="text--email p4">Email</span>
-                </label>
-              </div>
-              <div class="contacto--div--input">
-                <input class="input--asunto" type="text" name="asunto" required />
-                <label class="lbl--asunto">
-                  <span class="text--asunto p4">Asunto</span>
-                </label>
-              </div>
-              <textarea
-                class="contacto--textarea"
-                name="mensaje"
-                id=""
-                cols="30"
-                rows="5"
-                placeholder="Mensaje"
-                required
-              ></textarea>
-              <button class="contacto--button" type="submit">Enviar</button>
-            </form>
+        <div class="contacto--der flex">
+          <div class="contacto--redes flex">
+            <p class="p5">Nuestras Redes</p>
+            <div class="contacto--container--a flex">
+              <a
+                class="contactos--a contactos--a__insta"
+                href="https://www.instagram.com/memydeni/?hl=es-la"
+                target="_blank"
+              ></a>
+              <a class="contactos--a contactos--a__what" href="https://wa.me/5491126282014" target="_blank"></a>
+              <a class="contactos--a contactos--a__mail" href="mailto:memydeni.consultas@gmail.com" target="_blank"></a>
+            </div>
+          </div>
+          <div class="contacto--datos">
+            <div class="contacto--div--formulario">
+              <p class="p4">Completa el formulario para enviarme un mensaje.</p>
+              <form class="contacto--formulario" id="form" action="" method="POST">
+                <div class="contacto--div--input">
+                  <input class="input--nombre" type="text" name="nombre" required />
+                  <label class="lbl--nombre">
+                    <span class="text--nombre p4">Nombre</span>
+                  </label>
+                </div>
+                <div class="contacto--div--input">
+                  <input class="input--email" type="email" name="email" required />
+                  <label class="lbl--email">
+                    <span class="text--email p4">Email</span>
+                  </label>
+                </div>
+                <div class="contacto--div--input">
+                  <input class="input--asunto" type="text" name="asunto" required />
+                  <label class="lbl--asunto">
+                    <span class="text--asunto p4">Asunto</span>
+                  </label>
+                </div>
+                <textarea
+                  class="contacto--textarea"
+                  name="mensaje"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Mensaje"
+                  required
+                ></textarea>
+                <button class="contacto--button" type="submit">Enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
