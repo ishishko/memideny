@@ -9,10 +9,17 @@ body {
 }
 
 main {
+  display: none;
   padding-top: 6rem;
   height: calc(100vh - 6rem);
   width: 100%;
 }
+header,
+main,
+footer {
+  opacity: 0;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -29,7 +36,7 @@ main {
   color: white;
   font-family: "Quicksand", sans-serif;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.25rem;
 }
 
@@ -37,4 +44,20 @@ main {
   color: white;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
+}
+
+.p4 {
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.p5 {
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
 }

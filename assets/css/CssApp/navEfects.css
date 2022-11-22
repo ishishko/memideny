@@ -1,0 +1,8 @@
+.ocultar {
+  transition: all 0.5s;
+  max-height: 0;
+}
+
+.ocultar2 {
+  display: none;
+}

@@ -1,11 +1,209 @@
 .footer--container {
-  height: 5rem;
-  position: absolute;
-  bottom: 0;
-  background-color: bisque;
+  position: relative;
+  width: calc(100% - 8rem);
+  height: calc(100vh - 7rem);
+  padding: 6rem 4rem 2rem 4rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.footer--container--div {
+.contacto--footer {
+  position: absolute;
+  top: 8rem;
+  left: calc(50% - 6rem);
+}
+
+.contacto--izq {
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(50% - 2rem);
+  padding-right: 2rem;
+  height: 100%;
+}
+.contacto--pedidos {
+  flex-direction: column;
+  width: 70%;
+  max-width: 600px;
+  height: 25%;
+}
+
+.contacto--der {
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(50% - 2rem);
+  padding-left: 2rem;
+  height: 100%;
+}
+.contacto--redes {
   width: 100%;
-  height: inherit;
+  height: 25%;
+}
+.contacto--datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 54%;
+}
+.contacto--div--formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.contacto--formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contacto--div--input {
+  position: relative;
+  width: 100%;
+  height: 3.5rem;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.contacto--div--input input {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.contacto--textarea {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #353535;
+  border-radius: 5px;
+  resize: none;
+  padding: 0.5rem;
+}
+.contacto--button {
+  color: #353535;
+  font-weight: 500;
+  background-color: #2a7ae4;
+  border: 2.5px solid #2a7ae4;
+  padding: 1rem;
+}
+.contacto--button__ok {
+  background-color: lightgreen;
+  border: 2.5px solid lightgreen;
+}
+
+/*---------------------------*/
+.lbl--nombre {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 1px);
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.text--nombre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  transform: translateY(1.7rem);
+}
+
+.lbl--nombre::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid #353535;
+  transform: translatex(-100%);
+  transition: all 0.3s ease;
+}
+.input--nombre:focus + .lbl--nombre::after {
+  transform: translateX(0%);
+}
+.input--nombre:focus + .lbl--nombre .text--nombre,
+.input--nombre:valid + .lbl--nombre .text--nombre {
+  transform: translateY(0%);
+  font-weight: 500;
+}
+/*-------------------------*/
+.lbl--email {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 1px);
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.text--email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  transform: translateY(1.7rem);
+}
+
+.lbl--email::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid #353535;
+  transform: translatex(-100%);
+  transition: all 0.3s ease;
+}
+.input--email:focus + .lbl--email::after {
+  transform: translateX(0%);
+}
+.input--email:focus + .lbl--email .text--email,
+.input--email:valid + .lbl--email .text--email {
+  transform: translateY(0%);
+  font-weight: 500;
+}
+/*-------------------------------*/
+.lbl--asunto {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 1px);
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.text--asunto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  transform: translateY(1.7rem);
+}
+
+.lbl--asunto::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid #353535;
+  transform: translatex(-100%);
+  transition: all 0.3s ease;
+}
+.input--asunto:focus + .lbl--asunto::after {
+  transform: translateX(0%);
+}
+.input--asunto:focus + .lbl--asunto .text--asunto,
+.input--asunto:valid + .lbl--asunto .text--asunto {
+  transform: translateY(0%);
+  font-weight: 500;
 }

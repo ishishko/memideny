@@ -16,13 +16,14 @@
 }
 .header--li {
   padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   background-color: aqua;
 }
 .header--li:hover {
   transform: scale(1.1);
   transition: all 0.25s;
-  box-shadow: 0 0 10px 0 lightpink;
+  text-shadow: 1px 1px 5px #000000;
 }
 
 .header--li__1 {
@@ -49,10 +50,11 @@
 }
 .ul--secundario {
   position: absolute;
+  text-shadow: none;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(219, 168, 205, 0.9);
+  background-color: rgb(219, 168, 205, 0.75);
   padding: 1rem 1rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -66,19 +68,27 @@
 .li--secuntadio {
   z-index: 10;
 }
+.a--secundario {
+  display: flex;
+  border-radius: 0.25rem;
+}
 
 .header--li__2:hover {
-  transition: all 0.5s;
+  transition: all 0.3s;
   max-height: 1.9rem;
+  border-top-right-radius: 1rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  /* box-shadow: 0 1rem 0.25rem rgb(219, 168, 205); */
 }
 .header--li__2:hover ul {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
   transform: translateY(3rem);
   visibility: visible;
   opacity: 1;
   max-height: 12.75rem;
   max-width: 100%;
+}
+.a--secundario:hover {
+  text-shadow: 1px 1px 3px #000000;
+  box-shadow: 0 0 5px #ffffff;
 }

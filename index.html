@@ -18,9 +18,13 @@
     <link rel="stylesheet" href="./assets/css/main/productos.css" />
     <link rel="stylesheet" href="./assets/css/main/productos-selector.css" />
     <link rel="stylesheet" href="./assets/css/main/productos-lista.css" />
-
+    <link rel="stylesheet" href="./assets/css/main/quienes.css" />
     <link rel="stylesheet" href="./assets/css/footer/footer.css" />
+
+    <link rel="stylesheet" href="./assets/css/CssApp/spinner.css" />
+    <link rel="stylesheet" href="./assets/css/CssApp/navEfects.css" />
   </head>
+  <!-- <script src="./assets/app/load.js" type="module"></script> -->
   <body>
     <header class="header--container flex">
       <div class="header--container--div flex">
@@ -33,22 +37,22 @@
         <div class="header--container--nav">
           <nav class="header--nav flex">
             <ul class="header--ul flex">
-              <li class="header--li header--li__1 flex"><a class="p1" href="">INICIO</a></li>
+              <li class="header--li header--li__1 flex"><a class="p1 nav__inicio" href="">INICIO</a></li>
               <li class="header--li header--li__2 flex">
-                <a class="p1" href="">PRODUCTOS</a>
+                <a class="p1 nav__productos" href="">PRODUCTOS</a>
                 <ul class="ul--secundario">
-                  <li class="li--secuntadio"><a class="p2" href="#">LETRAS 3D</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">PAPERCRAFT</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">BOX Clasico</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">BOX Acetato</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">BOX Interactivo</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">BOX Tematico</a></li>
-                  <li class="li--secuntadio"><a class="p2" href="#">DECORACIONES</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__letras p2" href="#">LETRAS 3D</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__paper p2" href="#">PAPERCRAFT</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__boxc p2" href="#">BOX Clasico</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__boxa p2" href="#">BOX Acetato</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__boxi p2" href="#">BOX Interactivo</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__boxt p2" href="#">BOX Tematico</a></li>
+                  <li class="li--secuntadio"><a class="a--secundario nav__deco p2" href="#">DECORACIONES</a></li>
                 </ul>
               </li>
-              <li class="header--li header--li__3 flex"><a class="p1" href="">QUIENES SOMOS</a></li>
-              <li class="header--li header--li__4 flex"><a class="p1" href="">CONTACTO</a></li>
-              <li class="header--li header--li__5 flex"><a class="p1" href="">INFO</a></li>
+              <li class="header--li header--li__3 flex"><a class="p1 nav__somos" href="#">QUIENES SOMOS</a></li>
+              <li class="header--li header--li__4 flex"><a class="p1 nav__contacto" href="#">CONTACTO</a></li>
+              <li class="header--li header--li__5 flex"><a class="p1 nav__info" href="#">INFO</a></li>
             </ul>
           </nav>
         </div>
@@ -88,25 +92,149 @@
               <li class="productos--li producto__li7 p3 flex">DECORACIONES</li>
             </ul>
           </div>
-          <div class="productos--lista"></div>
+          <div class="productos--lista">
+            <div class="lista--container flex">
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p4">PRECIO: USD 15</p>
+                <p class="producto--categoria p4">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+              <div class="producto--item--container flex">
+                <div class="producto--img flex p3"></div>
+                <p class="producto--titulo p1">Titulo producto</p>
+                <p class="producto--precio p2">PRECIO: USD 15</p>
+                <p class="producto--categoria">CAJALOCA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quienes--container">
+        <div class="quienes--container--div flex">
+          <div class="quienes--hola"></div>
+          <div class="quientes--texto flex">
+            <p class="quienes--p p5">
+              Soy Memé, creadora de todo el mundo de MemyDeni. Amo la papelería y los festejos.
+            </p>
+            <p class="quienes--p p5">
+              En este sitio te ofrezco y muestro las opciones clasicas e infaltables y las que más me piden. Si hay
+              algún producto que no aparece y te interesa, escribime y lo diseño.
+            </p>
+            <p class="quienes--p p5">
+              Recordá que todos los productos se pueden personalizar con el personaje o temática que quieras!
+            </p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer--container flex">
-      <div class="footer--container--div">
-        <div class="footer--instagram">
-          <a href="#"><img src="" alt="" /></a>
+      <p class="contacto--footer p5">¿Queres Contactarme?</p>
+      <div class="contacto--izq flex">
+        <div class="contacto--pedidos flex p4">
+          <p>
+            Los presupuestos tienen una validez de 15 días corridos, siendo confirmados con una seña del 50% del total,
+            el saldo deberá ser abonado contra entrega. Se hacen envíos a todo el país.
+          </p>
+          <p>
+            Los diseños serán enviados dos semanas antes de la entrega pactada para su aprobación, una vez dado el ok no
+            se admitirán modificaciones. Los agregados y adicionales en cantidad al pedido inicial serán presupuestados
+            al momento de la solicitud.
+          </p>
         </div>
-        <div class="footer--whatsapp">
-          <a href="#"><img src="" alt="" /></a>
+        <div class="contactos--google">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.7130928464297!2d-58.53459527076385!3d-34.73411539665004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf73061492ad%3A0x597d2e0985b803e!2sEl%20Tabaquillo%2045%2C%20Cdad.%20Evita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669085829043!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="footer--email">
-          <a href="#"><img src="" alt="" /></a>
-        </div>
-        <div class="footer--contacto">
-          <a href="#"><img src="" alt="" /></a>
+      </div>
+      <div class="contacto--der flex">
+        <div class="contacto--redes"></div>
+        <div class="contacto--datos">
+          <div class="contacto--div--formulario">
+            <p class="p4">Completa el formulario para enviarme un mensaje.</p>
+            <form class="contacto--formulario" id="form" action="https://formspree.io/f/maykagoz" method="POST">
+              <div class="contacto--div--input">
+                <input class="input--nombre" type="text" name="nombre" required />
+                <label class="lbl--nombre">
+                  <span class="text--nombre p4">Nombre</span>
+                </label>
+              </div>
+              <div class="contacto--div--input">
+                <input class="input--email" type="email" name="email" required />
+                <label class="lbl--email">
+                  <span class="text--email p4">Email</span>
+                </label>
+              </div>
+              <div class="contacto--div--input">
+                <input class="input--asunto" type="text" name="asunto" required />
+                <label class="lbl--asunto">
+                  <span class="text--asunto p4">Asunto</span>
+                </label>
+              </div>
+              <textarea
+                class="contacto--textarea"
+                name="mensaje"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+              <button class="contacto--button" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./assets/app/app.js" type="module"></script>
   </body>
 </html>
