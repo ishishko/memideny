@@ -18,6 +18,8 @@
 .productos--lista {
   width: 87%;
   height: 100%;
+  box-shadow: 0 0 1rem inset rgb(139, 37, 112);
+  border-radius: 1rem;
 }
 .producto--titulo {
   color: rgb(139, 37, 112);

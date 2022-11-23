@@ -17,7 +17,7 @@
 .productos--li {
   color: rgb(red, green, blue);
   width: 100%;
-  max-width: 90%;
+  max-width: 80%;
   height: 4rem;
   max-height: 3rem;
   background-color: bisque;
@@ -27,7 +27,7 @@
 
 .productos--li:hover {
   transition: all 0.25s;
-  max-width: 100%;
+  max-width: 90%;
   max-height: 3.5rem;
   text-shadow: 1px 1px 5px black;
 }
