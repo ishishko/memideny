@@ -33,23 +33,29 @@ function ocultar(ver, bloquear1, bloquear2, bloquear3) {
   if (ver.classList.contains("ocultar") || ver.classList.contains("ocultar2")) {
     ver.classList.remove("ocultar");
     ver.classList.remove("ocultar2");
+    setTimeout(() => {
+      ver.classList.add("visible");
+    }, 250);
   }
   if (!bloquear1.classList.contains("ocultar2")) {
     bloquear1.classList.add("ocultar");
     setTimeout(() => {
       bloquear1.classList.add("ocultar2");
-    }, 500);
+      bloquear1.classList.remove("visible");
+    }, 250);
   }
   if (!bloquear2.classList.contains("ocultar2")) {
     bloquear2.classList.add("ocultar");
     setTimeout(() => {
       bloquear2.classList.add("ocultar2");
-    }, 500);
+      bloquear2.classList.remove("visible");
+    }, 250);
   }
   if (!bloquear3.classList.contains("ocultar2")) {
     bloquear3.classList.add("ocultar");
     setTimeout(() => {
       bloquear3.classList.add("ocultar2");
-    }, 500);
+      bloquear3.classList.remove("visible");
+    }, 250);
   }
 }
