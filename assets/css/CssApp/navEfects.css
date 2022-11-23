@@ -1,3 +1,8 @@
+.visible {
+  transition: all 0.5s;
+  max-height: 100%;
+}
+
 .ocultar {
   transition: all 0.5s;
   max-height: 0;

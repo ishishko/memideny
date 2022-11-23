@@ -1,19 +1,55 @@
-export default function navegador() {
-  const inicio = document.querySelector(".nav__inicio");
-  const productos = document.querySelector(".nav__productos");
-  const somos = document.querySelector(".nav__somos");
-  const contacto = document.querySelector(".nav__contacto");
-  const info = document.querySelector(".nav__info");
+export default function navegadorUI() {
+  const navInicio = document.querySelector(".nav__inicio");
+  const navProductos = document.querySelector(".nav__productos");
+  const navQuienes = document.querySelector(".nav__somos");
+  const navContacto = document.querySelector(".nav__contacto");
 
-  inicio.addEventListener("click", () => location.reload());
+  const slider = document.querySelector(".slider--container");
+  const productos = document.querySelector(".productos--container");
+  const quienes = document.querySelector(".quienes--container");
+  const contacto = document.querySelector(".footer--container");
 
-  productos.addEventListener("click", (e) => {
+  navInicio.addEventListener("click", (e) => {
     e.preventDefault();
-    const slider = document.querySelector(".slider--container");
-    slider.classList.add("ocultar");
+    ocultar(slider, productos, quienes, contacto);
   });
 
-  somos.addEventListener("click", () => console.log("hice click"));
-  contacto.addEventListener("click", () => console.log("hice click"));
-  info.addEventListener("click", () => console.log("hice click"));
+  navProductos.addEventListener("click", (e) => {
+    e.preventDefault();
+    ocultar(productos, slider, quienes, contacto);
+  });
+
+  navQuienes.addEventListener("click", (e) => {
+    e.preventDefault();
+    ocultar(quienes, productos, slider, contacto);
+  });
+  navContacto.addEventListener("click", (e) => {
+    e.preventDefault();
+    ocultar(contacto, quienes, productos, slider);
+  });
+}
+
+function ocultar(ver, bloquear1, bloquear2, bloquear3) {
+  if (ver.classList.contains("ocultar") || ver.classList.contains("ocultar2")) {
+    ver.classList.remove("ocultar");
+    ver.classList.remove("ocultar2");
+  }
+  if (!bloquear1.classList.contains("ocultar2")) {
+    bloquear1.classList.add("ocultar");
+    setTimeout(() => {
+      bloquear1.classList.add("ocultar2");
+    }, 500);
+  }
+  if (!bloquear2.classList.contains("ocultar2")) {
+    bloquear2.classList.add("ocultar");
+    setTimeout(() => {
+      bloquear2.classList.add("ocultar2");
+    }, 500);
+  }
+  if (!bloquear3.classList.contains("ocultar2")) {
+    bloquear3.classList.add("ocultar");
+    setTimeout(() => {
+      bloquear3.classList.add("ocultar2");
+    }, 500);
+  }
 }

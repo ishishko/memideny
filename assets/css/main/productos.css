@@ -2,7 +2,8 @@
   width: calc(100% - 8rem);
   height: calc(100vh - 6rem);
   padding: 0rem 4rem;
-  display: none;
+  max-height: calc(100vh - 6rem);
+  transition: all 0.5s;
 }
 .productos--container--div {
   width: 100%;
