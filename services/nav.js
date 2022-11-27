@@ -1,3 +1,5 @@
+import { render } from "../controllers/productos-controller.js";
+
 export default function navegadorUI() {
   const navInicio = document.querySelector(".nav__inicio");
   const navProductos = document.querySelector(".nav__productos");
@@ -17,6 +19,7 @@ export default function navegadorUI() {
   navProductos.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(productos, slider, quienes, contacto);
+    render();
   });
 
   navQuienes.addEventListener("click", (e) => {

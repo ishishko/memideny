@@ -44,7 +44,6 @@ export default function productoUI() {
 
 function letras(e) {
   e.preventDefault();
-
   selectProductos();
 }
 
