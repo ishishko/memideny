@@ -15,17 +15,19 @@
 }
 
 .productos--li {
-  color: rgb(red, green, blue);
   width: 100%;
   max-width: 80%;
   height: 4rem;
   max-height: 3rem;
-  background-color: bisque;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
+.productos--li a {
+  width: 100%;
+  height: 100%;
+}
 
-.productos--li:hover {
+.producto__lihover:hover {
   transition: all 0.25s;
   max-width: 90%;
   max-height: 3.5rem;

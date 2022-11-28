@@ -45,31 +45,54 @@ export default function productoUI() {
 function letras(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li1");
 }
 
 function paper(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li2");
 }
 function boxc(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li3");
 }
 function boxa(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li4");
 }
 function boxi(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li5");
 }
 function boxt(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li6");
 }
 function deco(e) {
   e.preventDefault();
   selectProductos();
+  seleccionado(".producto__li7");
+}
+
+function seleccionado(li) {
+  limipiarSeleccionados();
+  console.log(li);
+  const liProductos = document.querySelector(li);
+  liProductos.classList.remove("producto__lihover");
+  liProductos.classList.add("seleccionado");
+}
+
+function limipiarSeleccionados() {
+  const liLimpios = document.querySelector(".seleccionado");
+  if (liLimpios) {
+    liLimpios.classList.remove("seleccionado");
+    liLimpios.classList.add("producto__lihover");
+  }
 }
 
 function selectProductos() {
