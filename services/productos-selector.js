@@ -19,6 +19,9 @@ const boxiP = document.querySelector(".producto__li5");
 const boxtP = document.querySelector(".producto__li6");
 const decoP = document.querySelector(".producto__li7");
 
+let colorSelector = "";
+const producLista = document.querySelector(".productos--lista");
+
 export default function productoUI() {
   letrasN.addEventListener("click", letras);
   letrasP.addEventListener("click", letras);
@@ -45,46 +48,48 @@ export default function productoUI() {
 function letras(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li1");
+  seleccionado(".producto__li1", "selecColor0");
 }
 
 function paper(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li2");
+  seleccionado(".producto__li2", "selecColor1");
 }
 function boxc(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li3");
+  seleccionado(".producto__li3", "selecColor2");
 }
 function boxa(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li4");
+  seleccionado(".producto__li4", "selecColor3");
 }
 function boxi(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li5");
+  seleccionado(".producto__li5", "selecColor4");
 }
 function boxt(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li6");
+  seleccionado(".producto__li6", "selecColor5");
 }
 function deco(e) {
   e.preventDefault();
   selectProductos();
-  seleccionado(".producto__li7");
+  seleccionado(".producto__li7", "selecColor6");
 }
 
-function seleccionado(li) {
+function seleccionado(li, color) {
   limipiarSeleccionados();
-  console.log(li);
+  limpiarSelecColor();
+  colorSelector = color;
   const liProductos = document.querySelector(li);
   liProductos.classList.remove("producto__lihover");
   liProductos.classList.add("seleccionado");
+  producLista.classList.add(color);
 }
 
 function limipiarSeleccionados() {
@@ -92,6 +97,12 @@ function limipiarSeleccionados() {
   if (liLimpios) {
     liLimpios.classList.remove("seleccionado");
     liLimpios.classList.add("producto__lihover");
+  }
+}
+
+function limpiarSelecColor() {
+  if (colorSelector != "") {
+    producLista.classList.remove(colorSelector);
   }
 }
 
