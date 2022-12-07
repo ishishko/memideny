@@ -1,3 +1,6 @@
+import { render } from "../controllers/productos-controller.js";
+import { productoServicio } from "./productos-servicios.js";
+
 const slider = document.querySelector(".slider--container");
 const productos = document.querySelector(".productos--container");
 const quienes = document.querySelector(".quienes--container");
@@ -21,6 +24,8 @@ const decoP = document.querySelector(".producto__li7");
 
 let colorSelector = "";
 const producLista = document.querySelector(".productos--lista");
+const { arrayProductos, arrayLetras, arrayPapercraft, arrayBoxc, arrayBoxa, arrayBoxi, arrayBoxt, arrayDeco } =
+  productoServicio;
 
 export default function productoUI() {
   letrasN.addEventListener("click", letras);
@@ -49,37 +54,44 @@ function letras(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li1", "selecColor0");
+  render(arrayLetras);
 }
 
 function paper(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li2", "selecColor1");
+  render(arrayPapercraft);
 }
 function boxc(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li3", "selecColor2");
+  render(arrayBoxc);
 }
 function boxa(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li4", "selecColor3");
+  render(arrayBoxa);
 }
 function boxi(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li5", "selecColor4");
+  render(arrayBoxi);
 }
 function boxt(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li6", "selecColor5");
+  render(arrayBoxt);
 }
 function deco(e) {
   e.preventDefault();
   selectProductos();
   seleccionado(".producto__li7", "selecColor6");
+  render(arrayDeco);
 }
 
 function seleccionado(li, color) {

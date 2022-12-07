@@ -1,7 +1,10 @@
 import { productoServicio } from "../services/productos-servicios.js";
 
+const cardContainer = document.querySelector(".card--container");
+
 const mostrarProducto = (nombre, img, alt, precio, categoria, tamano) => {
-  const card = document.createElement("div");
+  const card = document.createElement("a");
+  card.href = "";
   const contenido = `
   <div class="card--img--div flex">
     <img  src="${img}"  alt=" ${alt} " class="card--img" />
@@ -18,29 +21,16 @@ const mostrarProducto = (nombre, img, alt, precio, categoria, tamano) => {
   return card;
 };
 
-export const render = async () => {
-  try {
-    const listaProductos = await productoServicio.arrayProductos;
-    const cardContainer = document.querySelector(".card--container");
-    limpiar();
-    listaProductos.forEach((elemento) => {
-      cardContainer.appendChild(
-        mostrarProducto(
-          elemento.nombre,
-          elemento.img,
-          elemento.alt,
-          elemento.precio,
-          elemento.categoria,
-          elemento.tamano
-        )
-      );
-    });
-  } catch (error) {
-    console.log(error);
-  }
+export const render = (selector) => {
+  limpiar();
+  console.log(selector);
+  selector.forEach((elemento) => {
+    cardContainer.appendChild(
+      mostrarProducto(elemento.nombre, elemento.img, elemento.alt, elemento.precio, elemento.categoria, elemento.tamano)
+    );
+  });
 };
 
 function limpiar() {
-  const selectorCards = document.querySelector(".card--container");
-  selectorCards.innerHTML = "";
+  cardContainer.innerHTML = "";
 }

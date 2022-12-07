@@ -1,4 +1,5 @@
 import { render } from "../controllers/productos-controller.js";
+import { productoServicio } from "./productos-servicios.js";
 
 export default function navegadorUI() {
   const navInicio = document.querySelector(".nav__inicio");
@@ -11,6 +12,9 @@ export default function navegadorUI() {
   const quienes = document.querySelector(".quienes--container");
   const contacto = document.querySelector(".footer--container");
 
+  const { arrayProductos, arrayLetras, arrayPapercraft, arrayBoxc, arrayBoxa, arrayBoxi, arrayBoxt, arrayDeco } =
+    productoServicio;
+
   navInicio.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(slider, productos, quienes, contacto);
@@ -19,7 +23,7 @@ export default function navegadorUI() {
   navProductos.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(productos, slider, quienes, contacto);
-    render();
+    render(arrayProductos);
   });
 
   navQuienes.addEventListener("click", (e) => {
