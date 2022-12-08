@@ -1,5 +1,5 @@
 .header--container--nav {
-  width: 50%;
+  width: 55%;
   height: 100%;
 }
 .header--nav {
@@ -33,7 +33,7 @@
   position: relative;
   z-index: 10;
   height: 4rem;
-  max-height: 1rem;
+  max-height: 1.2rem;
   flex-direction: column;
   background-color: rgb(219, 168, 205);
 }

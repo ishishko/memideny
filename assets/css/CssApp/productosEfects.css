@@ -11,23 +11,23 @@
 
 .selecColor0 {
   transition: all 0.5s;
-  background-color: rgb(219, 168, 205, 0.85);
+  background-color: rgb(219, 168, 205);
 }
 .selecColor1 {
   transition: all 0.5s;
-  background-color: rgb(234, 95, 60, 0.85);
+  background-color: rgb(234, 95, 60);
 }
 .selecColor2 {
   transition: all 0.5s;
-  background-color: rgb(208, 234, 221, 0.85);
+  background-color: rgb(208, 234, 221);
 }
 .selecColor3 {
   transition: all 0.5s;
-  background-color: rgb(117, 204, 206, 0.85);
+  background-color: rgb(117, 204, 206);
 }
 .selecColor4 {
   transition: all 0.5s;
-  background-color: rgb(249, 194, 210, 0.85);
+  background-color: rgb(249, 194, 210);
 }
 .selecColor5 {
   transition: all 0.5s;
@@ -36,4 +36,15 @@
 .selecColor6 {
   transition: all 0.5s;
   background-color: rgb(219, 168, 205, 0.85);
+}
+
+.emergente {
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+}
+.emergente--ocultar {
+  transition: all 0.5s ease-in-out;
+  max-width: 0;
+  max-height: 0;
 }

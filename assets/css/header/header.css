@@ -9,7 +9,7 @@
   padding: 0rem 4rem;
   padding-top: 1rem;
   background-color: #ffffff;
-  box-shadow: 0 20px 10px lightpink inset;
+  box-shadow: 0 10px 10px lightpink inset;
 }
 
 .header--container--div {
@@ -19,13 +19,13 @@
 
 /*-------------LOGO------------*/
 .header--logo {
-  width: 20%;
-  height: 85%;
+  width: 25%;
+  height: 90%;
   justify-content: start;
 }
 .header--logo1 {
   background-image: url(../../img/memydeni.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 90%;
   height: 70%;
@@ -33,7 +33,7 @@
 
 /*-----------------Buscador-------------*/
 .header--buscador {
-  width: 20%;
+  width: 15%;
   height: calc(100% - 1rem);
   padding-top: 1rem;
 }
@@ -48,7 +48,7 @@
 }
 
 .header--login {
-  width: 10%;
+  width: 5%;
   height: calc(100% - 1rem);
   padding-top: 1rem;
 }

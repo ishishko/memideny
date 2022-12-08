@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/footer/footer.css" />
 
     <link rel="stylesheet" href="./assets/css/CssApp/spinner.css" />
+    <link rel="stylesheet" href="./assets/css/CssApp/buscar.css" />
     <link rel="stylesheet" href="./assets/css/CssApp/navEfects.css" />
     <link rel="stylesheet" href="./assets/css/CssApp/productosEfects.css" />
   </head>
@@ -32,9 +33,6 @@
       <div class="header--container--div flex">
         <div class="header--logo flex">
           <div class="header--logo1"></div>
-        </div>
-        <div class="header--buscador flex">
-          <input class="input--buscador p4" type="text" placeholder="Buscar" />
         </div>
         <div class="header--container--nav">
           <nav class="header--nav flex">
@@ -56,6 +54,18 @@
               <li class="header--li header--li__4 flex"><a class="p1 nav__contacto" href="#">CONTACTO</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="header--buscador flex">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0
+              4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5
+              11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+          <input placeholder="Buscar" type="search" class="input p6" />
         </div>
         <div class="header--login flex">
           <button class="btn--login">Login</button>
@@ -211,23 +221,7 @@
         </div>
       </footer>
     </main>
-    <div class="card--emergente flex">
-      <div class="emergente--container flex">
-        <img class="emergente--img" src="" alt="" />
-        <div class="emergente--div flex">
-          <p class="emergente--titulo">sarasa</p>
-          <p class="emergente--descrip">
-            esta es una explicacion del item que estas vendiendo por lo tanto el tecto que yo estoy poniedo carecera de
-            sentido y solo sera para rellenar a modo de simulacion de que el elemento existe
-          </p>
-          <div class="emergente--div--interno">
-            <p class="emergente--categoria">CATEGORIA: LETRAS 3D</p>
-            <p class="emergente--tam">TAMAÑO: medidas que vamos a pasar</p>
-            <p class="emergente--precio">PRECIO: $duricimo</p>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <script src="./services/app.js" type="module"></script>
   </body>
 </html>

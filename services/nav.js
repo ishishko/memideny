@@ -1,5 +1,5 @@
 import { render } from "../controllers/productos-controller.js";
-import { productoServicio } from "./productos-servicios.js";
+import { productoServicio } from "../controllers/productos-servicios.js";
 
 export default function navegadorUI() {
   const navInicio = document.querySelector(".nav__inicio");
