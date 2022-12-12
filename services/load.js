@@ -23,5 +23,5 @@ export default function cargaTerminada() {
     main.classList.add("opacity");
     footer.classList.add("opacity");
     spinner.remove();
-  }, 2500);
+  }, 1500);
 }

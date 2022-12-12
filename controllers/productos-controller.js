@@ -32,7 +32,6 @@ const mostrarProducto = (id, nombre, img, alt, precio, categoria, tamano) => {
 const mostrarSeleccionado = (id) => {
   const elemento = document.createElement("div");
   elemento.classList.add("card--emergente");
-  console.log(elemento);
   const { arrayProductos } = productoServicio;
   arrayProductos.forEach((producto) => {
     if (producto.id == id) {
@@ -84,7 +83,6 @@ const mostrarSeleccionado = (id) => {
 
 export const render = (selector) => {
   limpiar(cardContainer);
-  console.log(selector);
   selector.forEach((elemento) => {
     cardContainer.appendChild(
       mostrarProducto(
@@ -124,6 +122,7 @@ function cerrar() {
   // salirBtn.addEventListener("click", salir);
   card.addEventListener("click", salir);
 }
+
 function salir() {
   const emerger = document.querySelector(".emergente--container");
   emerger.classList.add("emergente--ocultar");

@@ -24,8 +24,19 @@ const decoP = document.querySelector(".producto__li7");
 
 let colorSelector = "";
 const producLista = document.querySelector(".productos--lista");
-const { arrayProductos, arrayLetras, arrayPapercraft, arrayBoxc, arrayBoxa, arrayBoxi, arrayBoxt, arrayDeco } =
+let { arrayProductos, arrayLetras, arrayPapercraft, arrayBoxc, arrayBoxa, arrayBoxi, arrayBoxt, arrayDeco } =
   productoServicio;
+setTimeout(() => {
+  arrayProductos = productoServicio.arrayProductos;
+  arrayLetras = productoServicio.arrayLetras;
+  arrayPapercraft = productoServicio.arrayPapercraft;
+  arrayBoxc = productoServicio.arrayBoxc;
+  arrayBoxa = productoServicio.arrayBoxa;
+  arrayBoxi = productoServicio.arrayBoxi;
+  arrayBoxt = productoServicio.arrayBoxt;
+  arrayDeco = productoServicio.arrayDeco;
+  productoServicio;
+}, 2000);
 
 export default function productoUI() {
   letrasN.addEventListener("click", letras);

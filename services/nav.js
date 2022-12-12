@@ -11,9 +11,10 @@ export default function navegadorUI() {
   const productos = document.querySelector(".productos--container");
   const quienes = document.querySelector(".quienes--container");
   const contacto = document.querySelector(".footer--container");
-
-  const { arrayProductos, arrayLetras, arrayPapercraft, arrayBoxc, arrayBoxa, arrayBoxi, arrayBoxt, arrayDeco } =
-    productoServicio;
+  let arrayProductos = [];
+  setTimeout(() => {
+    arrayProductos = productoServicio.arrayProductos;
+  }, 1500);
 
   navInicio.addEventListener("click", (e) => {
     e.preventDefault();
