@@ -30,3 +30,12 @@
 .quienes--p {
   padding: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .quienes--hola {
+    width: 80%;
+  }
+  .quientes--texto {
+    width: 75%;
+  }
+}

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./assets/css/CssApp/buscar.css" />
     <link rel="stylesheet" href="./assets/css/CssApp/navEfects.css" />
     <link rel="stylesheet" href="./assets/css/CssApp/productosEfects.css" />
+    <link rel="stylesheet" href="./assets/css/CssApp/menu.css" />
   </head>
   <body>
     <header class="header--container flex">
@@ -33,41 +34,66 @@
         <div class="header--logo flex">
           <div class="header--logo1"></div>
         </div>
-        <div class="header--container--nav">
-          <nav class="header--nav flex">
-            <ul class="header--ul flex">
-              <li class="header--li header--li__1 flex"><a class="p1 nav__inicio" href="">INICIO</a></li>
-              <li class="header--li header--li__2 flex">
-                <a class="p1 nav__productos" href="">PRODUCTOS</a>
-                <ul class="ul--secundario">
-                  <li class="li--secuntadio"><a class="a--secundario nav__letras p2" href="#">LETRAS 3D</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__paper p2" href="#">PAPERCRAFT</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__boxc p2" href="#">BOX Clasico</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__boxa p2" href="#">BOX Acetato</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__boxi p2" href="#">BOX Interactivo</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__boxt p2" href="#">BOX Tematico</a></li>
-                  <li class="li--secuntadio"><a class="a--secundario nav__deco p2" href="#">DECORACIONES</a></li>
-                </ul>
-              </li>
-              <li class="header--li header--li__3 flex"><a class="p1 nav__somos" href="#">QUIENES SOMOS</a></li>
-              <li class="header--li header--li__4 flex"><a class="p1 nav__contacto" href="#">CONTACTO</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header--buscador flex">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-            <g>
-              <path
-                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0
-              4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5
-              11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
-              ></path>
-            </g>
-          </svg>
-          <input placeholder="Buscar" type="search" class="input p6" />
-        </div>
-        <div class="header--login flex">
-          <button class="btn--login">Login</button>
+        <div class="header--menu flex">
+          <label for="check" class="bar">
+            <input id="check" type="checkbox" />
+
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </label>
+          <div class="header--buscador flex">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0
+                4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5
+                11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+            <input placeholder="Buscar" type="search" class="input p6" />
+          </div>
+          <div class="header--container--nav">
+            <nav class="header--nav flex">
+              <ul class="header--ul flex">
+                <li class="header--li header--li__1 flex"><a class="p1 nav__inicio" href="">INICIO</a></li>
+                <li class="header--li header--li__2 flex">
+                  <a class="p1 nav__productos" href="">PRODUCTOS</a>
+                  <ul class="ul--secundario">
+                    <li class="li--secuntadio"><a class="a--secundario nav__letras p2" href="#">LETRAS 3D</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__paper p2" href="#">PAPERCRAFT</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__boxc p2" href="#">BOX Clasico</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__boxa p2" href="#">BOX Acetato</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__boxi p2" href="#">BOX Interactivo</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__boxt p2" href="#">BOX Tematico</a></li>
+                    <li class="li--secuntadio"><a class="a--secundario nav__deco p2" href="#">DECORACIONES</a></li>
+                  </ul>
+                </li>
+                <li class="header--li header--li__3 flex"><a class="p1 nav__somos" href="#">QUIENES SOMOS</a></li>
+                <li class="header--li header--li__4 flex"><a class="p1 nav__contacto" href="#">CONTACTO</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header--login flex">
+            <button class="btn--login">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
