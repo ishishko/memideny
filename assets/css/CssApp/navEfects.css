@@ -42,3 +42,11 @@
   display: flex;
   flex-direction: column;
 }
+.mostrar__nav2 {
+  flex-direction: row;
+}
+
+.buscador__top {
+  padding-top: 0.75rem;
+  padding-right: 4rem;
+}

@@ -92,6 +92,7 @@
     display: none;
   }
   .header--menu {
+    background-color: rgb(252, 252, 252, 0.9);
     max-width: 25%;
     width: 25%;
     height: 3rem;

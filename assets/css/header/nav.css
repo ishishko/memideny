@@ -30,7 +30,7 @@
 }
 .header--li__2 {
   position: relative;
-  z-index: 10;
+  z-index: 9;
   height: 4rem;
   max-height: 1.2rem;
   flex-direction: column;

@@ -11,6 +11,8 @@ export default function navegadorUI() {
   const productos = document.querySelector(".productos--container");
   const quienes = document.querySelector(".quienes--container");
   const contacto = document.querySelector(".footer--container");
+  const inputcheck = document.querySelector("#check");
+
   let arrayProductos = [];
   setTimeout(() => {
     arrayProductos = productoServicio.arrayProductos;

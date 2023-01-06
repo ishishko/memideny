@@ -1,6 +1,6 @@
 // import { db } from "../controllers/firebase.js";
 import cargaTerminada from "./load.js";
-import { btncheck, movil } from "./menu-movil.js";
+import { btncheck, menuNav, movil } from "./menu-movil.js";
 import navegadorUI from "./nav.js";
 import productoUI from "./productos-selector.js";
 
@@ -12,5 +12,6 @@ function events() {
   productoUI();
   if (movil.clientWidth < 768) {
     btncheck();
+    menuNav();
   }
 }

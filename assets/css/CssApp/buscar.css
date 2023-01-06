@@ -44,7 +44,9 @@ input:hover {
 @media (max-width: 767px) {
   .header--buscador {
     display: none;
-    max-width: 90%;
-    width: 90%;
+    max-width: 80%;
+    width: 80%;
+    height: 3rem;
+    padding-top: 5rem;
   }
 }
