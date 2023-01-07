@@ -97,3 +97,24 @@
   width: 3rem;
   height: 3rem;
 }
+
+@media (max-width: 768px) {
+  .productos--selector {
+    display: none;
+  }
+  .emergente--container {
+    flex-direction: column;
+    width: 27rem;
+    height: 45rem;
+    max-height: none;
+  }
+  .emergente--div {
+    width: 24rem;
+  }
+  .card--item {
+    border-bottom: 0.5px solid rgb(100, 100, 100, 0.75);
+  }
+  .card--img--div {
+    padding-bottom: 0.5rem;
+  }
+}

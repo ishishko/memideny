@@ -39,3 +39,12 @@
     width: 75%;
   }
 }
+
+@media (max-width: 768px) {
+  .quienes--hola {
+    min-width: 310px;
+  }
+  .quientes--texto {
+    width: 100%;
+  }
+}

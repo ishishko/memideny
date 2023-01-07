@@ -55,3 +55,9 @@
 .producto__li7 {
   background-color: rgb(219, 168, 205);
 }
+
+@media (max-width: 768px) {
+  .productos--selector {
+    flex-direction: column;
+  }
+}
