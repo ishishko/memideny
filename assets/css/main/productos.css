@@ -36,3 +36,9 @@
     width: 80%;
   }
 }
+
+@media (max-width: 768px) {
+  .productos--lista {
+    width: 100%;
+  }
+}

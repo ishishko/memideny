@@ -57,7 +57,4 @@
 }
 
 @media (max-width: 768px) {
-  .productos--selector {
-    flex-direction: column;
-  }
 }

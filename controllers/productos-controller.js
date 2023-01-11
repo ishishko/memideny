@@ -1,7 +1,8 @@
 import { productoServicio } from "./productos-servicios.js";
 
 const seleccionado = document.querySelector("body");
-const cardContainer = document.querySelector(".card--container");
+const color = ["selecColor0", "selecColor1", "selecColor2", "selecColor3", "selecColor4", "selecColor5", "selecColor6"];
+export const cardContainer = document.querySelector(".card--container");
 let card = "";
 let salirBtn = "";
 let img = document.querySelector(".emergente--img");
@@ -133,6 +134,12 @@ function salir() {
   }, 250);
 }
 
-function limpiar(borrar) {
+export function limpiar(borrar) {
+  const producLista = document.querySelector(".productos--lista");
+  /*color.forEach((select) => {
+    if (producLista.classList.contains(select)) {
+      producLista.classList.remove(select);
+    }
+  });*/
   borrar.innerHTML = "";
 }

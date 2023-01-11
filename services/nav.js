@@ -1,11 +1,11 @@
-import { render } from "../controllers/productos-controller.js";
+import { cardContainer, limpiar, render } from "../controllers/productos-controller.js";
 import { productoServicio } from "../controllers/productos-servicios.js";
 
 export default function navegadorUI() {
-  const navInicio = document.querySelector(".nav__inicio");
-  const navProductos = document.querySelector(".nav__productos");
-  const navQuienes = document.querySelector(".nav__somos");
-  const navContacto = document.querySelector(".nav__contacto");
+  const navInicio = document.querySelector(".header--li__1");
+  const navProductos = document.querySelector(".header--li__2");
+  const navQuienes = document.querySelector(".header--li__3");
+  const navContacto = document.querySelector(".header--li__4");
 
   const slider = document.querySelector(".slider--container");
   const productos = document.querySelector(".productos--container");
@@ -20,22 +20,34 @@ export default function navegadorUI() {
 
   navInicio.addEventListener("click", (e) => {
     e.preventDefault();
+    if (document.querySelector(".card")) {
+      limpiar(cardContainer);
+    }
     ocultar(slider, productos, quienes, contacto);
   });
 
   navProductos.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(productos, slider, quienes, contacto);
-    render(arrayProductos);
+    if (!document.querySelector(".card")) {
+      render(arrayProductos);
+    }
   });
 
   navQuienes.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(quienes, productos, slider, contacto);
+    if (document.querySelector(".card")) {
+      limpiar(cardContainer);
+    }
   });
+
   navContacto.addEventListener("click", (e) => {
     e.preventDefault();
     ocultar(contacto, quienes, productos, slider);
+    if (document.querySelector(".card")) {
+      limpiar(cardContainer);
+    }
   });
 }
 

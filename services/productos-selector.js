@@ -1,10 +1,12 @@
 import { render } from "../controllers/productos-controller.js";
 import { productoServicio } from "../controllers/productos-servicios.js";
+import buscando from "../controllers/productos-buscador.js";
 
 const slider = document.querySelector(".slider--container");
 const productos = document.querySelector(".productos--container");
 const quienes = document.querySelector(".quienes--container");
 const contacto = document.querySelector(".footer--container");
+const buscador = document.querySelector(".input");
 
 const letrasN = document.querySelector(".nav__letras");
 const paperN = document.querySelector(".nav__paper");
@@ -59,6 +61,8 @@ export default function productoUI() {
 
   decoN.addEventListener("click", deco);
   decoP.addEventListener("click", deco);
+
+  buscador.addEventListener("click", buscar);
 }
 
 function letras(e) {
@@ -67,7 +71,6 @@ function letras(e) {
   seleccionado(".producto__li1", "selecColor0");
   render(arrayLetras);
 }
-
 function paper(e) {
   e.preventDefault();
   selectProductos();
@@ -103,6 +106,13 @@ function deco(e) {
   selectProductos();
   seleccionado(".producto__li7", "selecColor6");
   render(arrayDeco);
+}
+
+function buscar() {
+  vistaProductos();
+  render(arrayProductos);
+  console.log("estamos mal");
+  buscador.addEventListener("keypress", buscando);
 }
 
 function seleccionado(li, color) {
