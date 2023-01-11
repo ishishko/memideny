@@ -111,7 +111,6 @@ function deco(e) {
 function buscar() {
   vistaProductos();
   render(arrayProductos);
-  console.log("estamos mal");
   buscador.addEventListener("keypress", buscando);
 }
 
