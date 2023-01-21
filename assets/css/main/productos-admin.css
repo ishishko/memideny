@@ -1,0 +1,56 @@
+.main--admin {
+  opacity: 1;
+  width: calc(100% - 4rem);
+  height: calc(100vh - 5.5rem);
+  padding: 0 2rem;
+}
+
+.card--admin {
+  height: 6rem;
+}
+.card--img {
+  height: 6rem;
+}
+.div--admin {
+  height: 6rem;
+  width: calc(100% - 6rem);
+  justify-content: space-around;
+}
+.admin--titulo {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2.5%;
+  width: calc(20% - 2.5%);
+}
+.admin--descrip {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2.5%;
+  width: calc(50% - 2.5%);
+}
+.admin--div--interno {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2%;
+  width: calc(20% - 2%);
+}
+.admin--button {
+  justify-content: space-around;
+  width: 10%;
+}
+.admin--btn {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.admin--btn__edit {
+  background-color: #1554ff;
+}
+.admin--btn__preview {
+  background-color: #2cfc36;
+}
+.admin--btn__borrar {
+  background-color: #ff0000;
+}

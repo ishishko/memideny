@@ -1,0 +1,28 @@
+.section--login {
+  height: 100vh;
+  display: none;
+}
+.div--login {
+  flex-direction: column;
+  background-color: #1554ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 20%;
+}
+.input--usuario {
+  padding: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+}
+.button--usuario {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.button--usuario:hover {
+  transition: 0.25s;
+  background-color: #a4bbfc;
+}

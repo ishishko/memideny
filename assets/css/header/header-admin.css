@@ -1,0 +1,16 @@
+.header--admin {
+  opacity: 1;
+  width: calc(100% - 4rem);
+  padding: 0 2rem;
+  padding-top: 2rem;
+}
+.nav--admin {
+  width: 100%;
+}
+.ul--admin {
+  flex-direction: row;
+  padding: 0.5rem 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #1554ff;
+}
