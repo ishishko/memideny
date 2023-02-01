@@ -14,3 +14,11 @@
   justify-content: space-around;
   background-color: #1554ff;
 }
+
+.nuevo--producto {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.9rem;
+  border: 2px #ffffff solid;
+}

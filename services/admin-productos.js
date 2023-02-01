@@ -1,4 +1,5 @@
 import { productoServicio } from "../controllers/productos-servicios.js";
+import editarEmergente from "../services/admin-editar.js";
 
 const secProductos = document.querySelector(".productos--admin");
 let productos = [];
@@ -7,7 +8,7 @@ export default function adminProductos() {
   setTimeout(() => {
     productos = productoServicio.arrayProductos;
     adminRender();
-  }, 1000);
+  }, 2000);
 }
 
 function adminRender() {
@@ -16,7 +17,6 @@ function adminRender() {
     const { alt, categoria, descripcion, id, img, nombre, precio, tamano } = producto;
     cardAdmin.classList.add("card--admin");
     cardAdmin.classList.add("flex");
-    console.log(alt, categoria, descripcion, id, img, nombre, precio, tamano);
     cardAdmin.innerHTML = `
   <img
             class="card--img"
@@ -38,7 +38,7 @@ function adminRender() {
               <p class="admin--precio flex p4">PRECIO&nbsp;:&nbsp;&nbsp; <span>${precio} </span></p>
             </div>
             <div class="admin--button flex">
-              <button class="admin--btn admin--btn__edit flex">
+              <button class="admin--btn admin--btn__edit flex" id="${id}">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -54,7 +54,7 @@ function adminRender() {
                   />
                 </svg>
               </button>
-              <button class="admin--btn admin--btn__preview flex">
+              <button class="admin--btn admin--btn__preview flex" id="${id}">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -71,7 +71,7 @@ function adminRender() {
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </button>
-              <button class="admin--btn admin--btn__borrar flex">
+              <button class="admin--btn admin--btn__borrar flex" id="${id}">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -90,7 +90,20 @@ function adminRender() {
             </div>
           </div>
   `;
-    console.log(cardAdmin);
     secProductos.appendChild(cardAdmin);
+    const selectorP = document.getElementById(id);
+    const selectorH = selectorP.children[0];
+
+    selectorP.addEventListener("click", (e) => {
+      edit(e.target.id);
+    });
+    selectorH.addEventListener("click", (e) => {
+      e.stopPropagation();
+      edit(productos[selectorH.parentElement.id - 1]);
+    });
   });
+}
+
+function edit(target) {
+  editarEmergente(target);
 }

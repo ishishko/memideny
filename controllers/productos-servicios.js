@@ -23,6 +23,8 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 
 const codigo = 123456555;
+export let loginData = {};
+let cargaProductos = false;
 let listaProductos = [];
 let arrayProductos = arrayCategoria("");
 let arrayLetras = arrayCategoria("LETRAS 3D");
@@ -39,7 +41,15 @@ const getDB = () => {
     .then((productos) => {
       if (productos.exists()) {
         productos.forEach((producto) => {
-          listaProductos.push(producto.val());
+          if (cargaProductos) {
+            listaProductos.push(producto.val());
+          } else {
+            loginData = {
+              usuario: producto.val().usuario,
+              contrasena: producto.val().contrasena,
+            };
+            cargaProductos = true;
+          }
         });
       }
     })
@@ -66,7 +76,7 @@ const getDB = () => {
     .catch((error) => console.log(error));
 };
 
-const insertDB = () => {
+const insertDB = (codigo) => {
   set(ref(db, "producto/" + codigo), {
     nombre: "3D SIMPLE mas",
     img: "https://static.wixstatic.com/media/dabb89_cb3ad1483f284dadb9cee540f0eb7788~mv2.jpg/v1/fill/w_764,h_764,al_c,q_85,usm_1.20_1.00_0.01,enc_auto/dabb89_cb3ad1483f284dadb9cee540f0eb7788~mv2.jpg",
@@ -81,13 +91,11 @@ const insertDB = () => {
   // return set();
 };
 
-const updateData = (codigo) => {
-  update(ref(db, "producto/" + codigo), {
-    nombre: "3d Simple",
-  });
+let updateData = (codigo, producto) => {
+  update(ref(db, "producto/" + codigo), console.log(codigo, producto));
 };
 
-const removeData = (codigo) => {
+export const removeData = (codigo) => {
   remove(ref(db, "producto/" + codigo));
 };
 

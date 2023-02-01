@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/CssApp/navEfects.css" />
     <link rel="stylesheet" href="./assets/css/CssApp/buscar.css" />
     <link rel="stylesheet" href="./assets/css/main/productos-admin.css" />
+    <link rel="stylesheet" href="./assets/css/main/admin-editar.css" />
 
     <title>admin Meme</title>
   </head>
@@ -23,36 +24,39 @@
     <section class="section--login flex">
       <div class="div--login flex">
         <h1 class="p5">LOGIN</h1>
-        <input class="input--usuario p6" type="text" placeholder="Usuario" />
-        <input class="input--usuario p6" type="password" placeholder="Contraseña" />
+        <input class="input--usuario input--usuario__user p6" type="text" placeholder="Usuario" />
+        <input class="input--usuario input--usuario__pass p6" type="password" placeholder="Contraseña" />
         <button class="button--usuario p4">Ingresar</button>
       </div>
     </section>
-    <header class="header--admin flex">
-      <nav class="nav--admin">
-        <ul class="ul--admin flex">
-          <li><a class="p2" href="">Productos</a></li>
-          <li>
-            <div class="header--buscador flex">
-              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                <g>
-                  <path
-                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0
-                    4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5
-                    11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
-                  ></path>
-                </g>
-              </svg>
-              <input placeholder="Buscar" type="search" class="input p6" />
-            </div>
-          </li>
-          <li class="p2"><a class="p2" href="">Slider</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main--admin">
-      <section class="productos--admin"></section>
-    </main>
+    <section class="section--productos ocultar2">
+      <header class="header--admin flex">
+        <nav class="nav--admin">
+          <ul class="ul--admin flex">
+            <li><a class="p2" href="">Productos</a></li>
+            <li class="nuevo--producto flex p1">+</li>
+            <li>
+              <div class="header--buscador flex">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <g>
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0
+                      4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5
+                      11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                  </g>
+                </svg>
+                <input placeholder="Buscar" type="search" class="input p6" />
+              </div>
+            </li>
+            <li class="p2"><a class="p2" href="">Slider</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main--admin">
+        <section class="productos--admin"></section>
+      </main>
+    </section>
     <script src="./services/admin.js" type="module"></script>
   </body>
 </html>

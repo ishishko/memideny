@@ -1,0 +1,86 @@
+.admin-emergente {
+  position: absolute;
+  top: -4rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.card--admin--emergente {
+  width: 60rem;
+  height: 34rem;
+}
+
+.card--emergente {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+.emergente--container {
+  position: relative;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  width: 60rem;
+  height: 34rem;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.75);
+}
+.emergente--img {
+  opacity: 1;
+  border-radius: 1rem;
+  width: 30rem;
+  height: 30rem;
+}
+.emergente--div {
+  overflow: hidden;
+  height: calc(34rem - 3rem);
+  width: calc(30rem - 3rem);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+.emergente--div--interno {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 5rem;
+}
+
+.emergente--titulo {
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+}
+
+.editar--cancelar,
+.editar--guardar {
+  position: absolute;
+  bottom: -4rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  border: none;
+}
+.editar--guardar {
+  background-color: #1554ff;
+  left: calc(50% - 10rem);
+}
+.editar--cancelar {
+  background-color: #ff0000;
+  left: calc(50% + 1rem);
+}
+
+.div--emergente--imagen {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 34rem;
+}
+.emergente--descrip {
+  flex-direction: column;
+  align-items: flex-start;
+}

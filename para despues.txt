@@ -1,0 +1,97 @@
+`<div class="card--admin--emergente flex" id="${id}">
+    <div class="emergente--container flex">
+      <img
+        class="emergente--img"
+        src="${img}"
+        alt="${alt}"
+      />
+      <div class="emergente--div flex">
+        <p class="emergente--titulo p5">${nombre} </p>
+        <p class="emergente--descrip p4">${descripcion} </p>
+        <div class="emergente--div--interno flex">
+          <p class="emergente--categoria flex p4">CATEGORIA&nbsp;:&nbsp;&nbsp;<span> ${categoria}</span></p>
+          <p class="emergente--tam flex p4">TAMAÑO&nbsp;:&nbsp;&nbsp; <span>${tamano} </span></p>
+          <p class="emergente--precio flex p4">PRECIO&nbsp;:&nbsp;&nbsp; <span>${precio} </span></p>
+        </div>
+      </div>
+      <button class="emergente--salir flex">
+        <svg
+          class="salir--interior"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+         class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </button>
+    </div>
+    </div>`
+
+
+
+    .card--admin--emergente {
+  width: 60rem;
+  height: 30rem;
+}
+
+.card--emergente {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+.emergente--container {
+  position: relative;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  width: 60rem;
+  height: 30rem;
+  max-width: 60rem;
+  max-height: 30rem;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.75);
+}
+.emergente--img {
+  opacity: 1;
+  border-radius: 1rem;
+  width: 30rem;
+  height: 30rem;
+}
+.emergente--div {
+  overflow: hidden;
+  height: calc(30rem - 3rem);
+  width: calc(30rem - 3rem);
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+.emergente--div--interno {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.emergente--titulo {
+  color: #000000;
+}
+
+.emergente--salir {
+  position: absolute;
+  left: calc(50% - 2rem);
+  bottom: -4rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.75);
+}
